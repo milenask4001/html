@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML</title>
+  </head>
+  <body>
+    <header>
+      <h1>Witaj na mojej stronie</h1>
+      <nav>
+       <ul>
+        <li><a href="home">Strona Główna</a></li>
+        <li><a href="about me" target="_blank" rel="noopener noreferrer">O mnie</a></li>
+       </ul>
+      </nav>
+      <main>
+        <section>
+          <h2 style="color: purple; text-align: center;">Artykuły:</h2>
+          <article>
+            <h2>Czym się zajmuję</h2>
+            <p>Zajmuję się nauką <span style="color:red">programowania</span></p>
+            <img src="https://operon.pl/var/operon/storage/images/media/pliki/do_kuriera/operon-programowanie-jezyk-xxi-wieku/212370-1-pol-PL/Operon-Programowanie-jezyk-XXI-wieku.jpg" alt="code">
+          </article>
+        </section>
+        <section>
+          <h2>Napisz do mnie:</h2>
+          <form action="/submit" method="post">
+            <label for="name">Imię:</label>
+            <input type="text" id="name" name="name">
+           <label for="email">Twoj e-mail:</label>
+           <input type="email" id="email" name="email" required>
+           <label for="message">Wiadomosc</label>
+           <input type="text" id="message"name="message" required>
+           <button type="submit">Wyslij</button>
+
+          </form>
+        </section>
+      </main>
+    
+    </header>
+    <footer>
+      <p>&copy; 2025 Moja strona.</p>
+    </footer>
+  </body>
+</html>
