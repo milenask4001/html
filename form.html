@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formularz</title>
+  </head>
+  <body>
+    <section>
+      <form action="#" method="post">
+        <h2>Formularz kontaktowy:</h2>
+        <fieldset style="background-color: aquamarine;">
+          <legend>Dane kontaktowe:</legend>
+          <label for="name">Imię:</label>
+          <input type="text" id="name" name="name" required />
+          <label for="surname">Nazwisko:</label>
+          <input type="text" id="surname" name="surname" required />
+          <label for="e-mail">E-mail:</label>
+          <input type="email" id="e-mail" name="e-mail" required />
+        </fieldset>
+        <fieldset style="background-color: bisque;">
+          <legend>Dodatkowe informacje:</legend>
+          <label for="date">Data wyjazdu:</label>
+          <input type="date" id="date" name="date" required />
+          <label for="number">Liczba osób:</label>
+          <input type="number" id="participants" name="participants" required />
+          <label for="country">Kraj:</label>
+          <select id="country" name="country" required>
+            <option value="" disabled selected>--wybierz--</option>
+            <option value="Grecja">Grecja</option>
+            <option value="Włochy">Włochy</option>
+            <option value="Hiszpania">Hiszpania</option>
+          </select>
+          <label for="textarea">Dodatkowe informacje:</label>
+          <input type="text" id="textarea" name="textarea"/>
+        </fieldset>
+        <fieldset style="background-color: aquamarine;">
+          <legend>Wazne!</legend>
+          <label >
+            <input type="checkbox" id="accept" name="accept" required>Wyrazam zgodę na przetwazanie danych osobowych
+          </label>
+        </fieldset>
+        <button style="background-color:antiquewhite; margin-top: 10px;">Wyślij formularz</button>
+      </form>
+    </section>
+  </body>
+</html>
+
+
